@@ -95,3 +95,38 @@ else
         end
     end)
 end
+
+-- Delete flintlock projectile 15% of the time
+local function handle_flintlock(weapon, projectile)
+    if weapon.blueprint.name == "AC_FLINTLOCK" and Hyperspace.random32()%100 < 15 then
+        Hyperspace.Global.GetInstance():GetSoundControl():PlaySoundMix("flintlockMisfire", 1, false)
+        projectile:Kill()
+        return true
+    end
+end
+if infernoInstalled then
+    script.on_fire_event(Defines.FireEvents.WEAPON_FIRE, function(ship, weapon, projectile) handle_flintlock(weapon, projectile) end, INT_MAX)
+else
+    local function handle_flintlock_wrapper(weapons)
+        for weapon in vter(weapons) do
+            if weapon.blueprint.name == "AC_FLINTLOCK" then
+                local projectile = weapon:GetProjectile()
+                while projectile do
+                    Hyperspace.Global.GetInstance():GetCApp().world.space.projectiles:push_back(projectile)
+                    handle_flintlock(weapon, projectile)
+                    projectile = weapon:GetProjectile()
+                end
+            end
+        end
+    end
+    script.on_internal_event(Defines.InternalEvents.ON_TICK, function()
+        local weaponsPlayer = nil
+        if pcall(function() weaponsPlayer = Hyperspace.ships.player.weaponSystem.weapons end) and weaponsPlayer then
+            handle_flintlock_wrapper(weaponsPlayer)
+        end
+        local weaponsEnemy = nil
+        if pcall(function() weaponsEnemy = Hyperspace.ships.enemy.weaponSystem.weapons end) and weaponsEnemy then
+            handle_flintlock_wrapper(weaponsEnemy)
+        end
+    end)
+end

@@ -27,3 +27,26 @@
     <mountPoint x="5" y="49"/>
     <chargeImage>weapons/modular_laser_all_modules_glow.png</chargeImage>
 </weaponAnim>
+
+<animSheet name="autocannon_flintlock" w="230" h="85" fw="23" fh="85">weapons/autocannon_flintlock.png</animSheet>
+<weaponAnim name="autocannon_flintlock">
+    <sheet>autocannon_flintlock</sheet>
+    <desc length="10" x="0" y="0"/>
+    <chargedFrame>3</chargedFrame>
+    <fireFrame>6</fireFrame>
+    <firePoint  x="14" y="38"/>
+    <mountPoint x="5" y="63"/>
+    <chargeImage>weapons/autocannon_flintlock_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="autocannon_flintlock_icon" w="67" h="21" fw="67" fh="21">weapons/autocannon_flintlock_icon.png</animSheet>
+<anim name="autocannon_flintlock_icon">
+	<sheet>autocannon_flintlock_icon</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="GB_shot_medium" w="200" h="20" fw="50" fh="20">projectiles/GB_shot_medium_strip4.png</animSheet>
+<anim name="GB_shot_medium">
+	<sheet>GB_shot_medium</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
+</anim>
