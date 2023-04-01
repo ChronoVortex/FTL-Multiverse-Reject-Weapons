@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<weaponBlueprint name="BOMB_SHOTGUN_SHRAPNEL">
+    <type>BURST</type>
+    <title>Scatter Bomb</title>
+    <short>Scatter B.</short>
+	<desc>This bomb launcher fires a burst of 4 shrapnel bombs across an area. Each bomb damages systems and causes crew to bleed. Unlike most bombs, it cannot target your own ship.</desc>
+	<tooltip>Bomb weapon; requires a missile; fires a spread of 4 bombs which each deal 1 system damage and inflict bleed.</tooltip>
+    <radius>70</radius>
+	<damage>0</damage>
+	<sysDamage>1</sysDamage>
+	<persDamage>1</persDamage>
+	<accuracyMod>30</accuracyMod>
+	<missiles>1</missiles>
+    <shots>1</shots>
+	<fireTime>1.1</fireTime> <!-- Needed to make the anim for a burst act like the anim for a bomb -->
+    <sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+    <cooldown>12</cooldown>
+    <power>2</power>
+    <cost>70</cost>
+    <bp>10</bp>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-1</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>10</duration>
+			<boostAnim>blood_effect</boostAnim>
+		</statBoost>
+	</statBoosts>
+    <speed>0</speed>
+    <rarity>4</rarity>
+    <projectiles>
+        <projectile count="1" fake="false">laser_burst</projectile>
+    </projectiles>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+    <weaponArt>bomblauncher_cluster_shrapnel</weaponArt>
+</weaponBlueprint>
+<weaponBlueprint name="BOMB_SHOTGUN_SHRAPNEL_PROJ">
+	<type>BOMB</type>
+	<tip>tip_bombs</tip>
+	<title>Scatter Bomb Projectile</title>
+	<short>Scatter Bomb Projectile</short>
+	<locked>1</locked>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS</tooltip>
+	<damage>0</damage>
+	<sysDamage>1</sysDamage>
+	<persDamage>1</persDamage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>12</cooldown>
+	<power>1</power>
+	<cost>0</cost>
+	<bp>4</bp>
+	<statBoosts>
+		<statBoost name="trueHealAmount">
+			<boostType>FLAT</boostType>
+			<amount>-1</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<duration>10</duration>
+			<boostAnim>blood_effect</boostAnim>
+		</statBoost>
+	</statBoosts>
+	<rarity>0</rarity>
+	<image>bomb_cluster_shrapnel</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomblauncher_cluster_shrapnel</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MODULAR_LASER_OMNI">
+	<type>BURST</type>
+	<drone_targetable>0</drone_targetable>
+	<flavorType>Laser</flavorType>
+	<title>Hektar OmniLaser(TM)</title>
+	<short>OmniLaser</short>
+	<tip>tip_laser</tip>
+	<desc>While strapping every Hektar(TM) module to a single weapon may sound like a good idea, it does come with its downsides. Every shot this weapon fires has a random set of effects, and occasionally the weapon will short out and fire a shot that has no effects.</desc>
+	<tooltip>All modules attached.</tooltip>
+	<damage>1</damage>
+	<shots>5</shots>
+	<accuracyMod>20</accuracyMod>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>13.5</cooldown>
+	<power>3</power>
+	<cost>100</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="1" fake="false" blueprint="STATION_LOOT_HEKTAR_PROJ_LIST">laser_burst</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>modular_laser_all_modules</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>

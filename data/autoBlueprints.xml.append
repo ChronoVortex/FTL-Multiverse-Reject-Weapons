@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blueprintList name="STATION_LOOT_HEKTAR_PROJ_LIST">
+	<name>MODULAR_LASER_BASE_BIO</name>
+	<name>MODULAR_LASER_BASE_COOLDOWN</name>
+	<name>MODULAR_LASER_BASE_LOCKDOWN</name>
+	<name>MODULAR_LASER_BASE_PIERCE</name>
+	<name>MODULAR_LASER_BASE_STUN</name>
+	<name>MODULAR_LASER_FIRE_BIO</name>
+	<name>MODULAR_LASER_FIRE_COOLDOWN</name>
+	<name>MODULAR_LASER_FIRE_LOCKDOWN</name>
+	<name>MODULAR_LASER_FIRE_PIERCE</name>
+	<name>MODULAR_LASER_FIRE_STUN</name>
+	<name>MODULAR_LASER_HULL_BIO</name>
+	<name>MODULAR_LASER_HULL_COOLDOWN</name>
+	<name>MODULAR_LASER_HULL_LOCKDOWN</name>
+	<name>MODULAR_LASER_HULL_PIERCE</name>
+	<name>MODULAR_LASER_HULL_STUN</name>
+	<name>LASER_LIGHT</name>
+	<name>LASER_LIGHT</name>
+	<name>LASER_LIGHT</name>
+</blueprintList>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<animSheet name="bomblauncher_cluster_shrapnel" w="704" h="51" fw="44" fh="51">weapons/bomblauncher_cluster_shrapnel.png</animSheet>
+<weaponAnim name="bomblauncher_cluster_shrapnel">
+    <sheet>bomblauncher_cluster_shrapnel</sheet>
+    <desc length="16" x="0" y="0"/>
+    <chargedFrame>1</chargedFrame>
+    <fireFrame>2</fireFrame>
+    <firePoint x="0" y="0" />
+    <mountPoint x="8" y="33" />
+    <chargeImage>weapons/bomblauncher_cluster_shrapnel_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bomb_cluster_shrapnel" w="525" h="35" fw="35" fh="35">weapons/bomb_cluster_shrapnel.png</animSheet>
+<anim name="bomb_cluster_shrapnel">
+    <sheet>bomb_cluster_shrapnel</sheet>
+    <desc length="15" x="0" y="0"/>
+    <time>1.0</time>
+</anim>
+
+<animSheet name="modular_laser_all_modules" w="364" h="73" fw="26" fh="73">weapons/modular_laser_all_modules.png</animSheet>
+<weaponAnim name="modular_laser_all_modules">
+    <sheet>modular_laser_all_modules</sheet>
+    <desc length="14" x="0" y="0"/>
+    <chargedFrame>9</chargedFrame>
+    <fireFrame>11</fireFrame>
+    <firePoint  x="14" y="21"/>
+    <mountPoint x="5" y="49"/>
+    <chargeImage>weapons/modular_laser_all_modules_glow.png</chargeImage>
+</weaponAnim>
