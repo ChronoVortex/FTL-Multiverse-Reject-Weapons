@@ -50,3 +50,26 @@
 	<desc length="4" x="0" y="0" />
 	<time>0.5</time>
 </anim>
+
+<animSheet name="autocannon_revolver_charge" w="336" h="80" fw="56" fh="80">weapons/autocannon_revolver_charges.png</animSheet>
+<anim name="autocannon_revolver_charge">
+    <sheet>autocannon_revolver_charge</sheet>
+    <desc length="6" x="0" y="0"/>
+    <time>1.0</time>
+</anim>
+<animSheet name="autocannon_revolver" w="1120" h="80" fw="56" fh="80">weapons/autocannon_revolver.png</animSheet>
+<weaponAnim name="autocannon_revolver">
+    <sheet>autocannon_revolver</sheet>
+    <desc length="20" x="0" y="0"/>
+    <chargedFrame>5</chargedFrame>
+    <fireFrame>8</fireFrame>
+    <firePoint x="40" y="51"/>
+    <mountPoint x="10" y="55"/>
+    <boost>autocannon_revolver_charge</boost>
+</weaponAnim>
+<animSheet name="autocannon_revolver_icon" w="60" h="53" fw="60" fh="53">weapons/autocannon_revolver_icon.png</animSheet>
+<anim name="autocannon_revolver_icon">
+	<sheet>autocannon_revolver_icon</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
+	<mod-append:choice req="AC_REVOLVER" blue="false">
+		<text>(Revolving Autocannon) Load the revolver.</text>
+		<event load="COMBAT_CHECK_AC_REVOLVER"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="COMBAT_CHECK_AC_REVOLVER">
+    <text>Are you sure you want to load the revolver? [-2}]</text>
+    <choice hidden="true">
+        <text>Load.</text>
+        <event>
+            <text>You start loading the revolver...</text>
+            <remove name="AC_REVOLVER"/>
+            <choice hidden="true">
+                <text>Continue...</text>
+                <event>
+                    <text>You finish loading the revolver successfully.</text>
+                    <weapon name="AC_REVOLVER_USE"/>
+                    <item_modify>
+                        <item type="missiles" min="-2" max="-2"/>
+                    </item_modify>
+                    <triggeredEvent name="CHECK_AC_REVOLVER_MAINTAIN" event="CHECK_AC_REVOLVER_MAINTAIN">
+                        <jumps amount="1" type="0"/>
+                    </triggeredEvent>
+                    <choice hidden="true">
+                        <text>Continue...</text>
+                        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+                    </choice>
+                </event>
+            </choice>
+        </event>
+    </choice>
+    <choice hidden="true">
+        <text>Return to the toggle menu.</text>
+        <event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+    </choice>
+</event>
+<event name="CHECK_AC_REVOLVER_MAINTAIN">
+	<loadEventList default="CHECK_AC_REVOLVER_MAINTAIN_NOTHING">
+		<event name="CHECK_AC_REVOLVER_MAINTAIN_REAL" req="AC_REVOLVER_USE"/>
+	</loadEventList>
+</event>
+<event name="CHECK_AC_REVOLVER_MAINTAIN_NOTHING" />
+<event name="CHECK_AC_REVOLVER_MAINTAIN_REAL">
+    <text>Keep the revolver loaded? [-2}]</text>
+    <choice hidden="true">
+        <text>Yes.</text>
+        <event>
+            <text>You reload the revolver.</text>
+            <item_modify>
+                <item type="missiles" min="-2" max="-2"/>
+            </item_modify>
+            <triggeredEvent name="CHECK_AC_REVOLVER_MAINTAIN" event="CHECK_AC_REVOLVER_MAINTAIN">
+                <jumps amount="1" type="0"/>
+            </triggeredEvent>
+        </event>
+    </choice>
+    <choice hidden="true">
+        <text>No.</text>
+        <event>
+            <text>You start deactivating the revolver...</text>
+            <remove name="AC_REVOLVER_USE"/>
+            <choice hidden="true">
+                <text>Continue...</text>
+                <event>
+                    <text>You finish deactivating the revolver successfully.</text>
+                    <weapon name="AC_REVOLVER"/>
+                </event>
+            </choice>
+        </event>
+    </choice>
+</event>

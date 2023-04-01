@@ -131,6 +131,7 @@
 
 <weaponBlueprint name="AC_FLINTLOCK">
 	<type>LASER</type>
+	<flavorType>Autocannon</flavorType>
 	<title>Electrolock Autocannon</title>
 	<short>E-Lock AC</short>
 	<desc>This weapon's unique method of propulsion allows it to fire stronger projectiles, but each shot has a 15% chance to misfire.</desc>
@@ -167,5 +168,102 @@
 	</missSounds>
 	<weaponArt>autocannon_flintlock</weaponArt>
     <iconReplace>autocannon_flintlock_icon</iconReplace>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="AC_REVOLVER">
+	<type>BURST</type>
+	<flavorType>Autocannon</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Revolving Autocannon [U]</title>
+	<short>Revolver [U]</short>
+	<desc>[Current Mode: Unloaded] Instead of consuming ammo normally, this weapon can be loaded through the toggle menu. Once loaded, it will charge faster with each shot, becoming unable to fire after its 6th shot.</desc>
+	<tooltip>1 shot 2 damage weapon, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<radius>45</radius>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>-1</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>3.8</amount>
+		<count>6</count>
+	</boost>
+	<power>0</power>
+	<bp>4</bp>
+	<rarity>4</rarity>
+	<cost>40</cost>
+	<projectiles>
+		<projectile count="1" fake="false">GB_shot_medium</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>autocannon_revolver</weaponArt>
+    <iconReplace>autocannon_revolver_icon</iconReplace>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="AC_REVOLVER_USE">
+	<type>BURST</type>
+	<flavorType>Autocannon</flavorType>
+	<drone_targetable>0</drone_targetable>
+	<title>Revolving Autocannon [L]</title>
+	<short>Revolver [L]</short>
+	<desc>[Current Mode: Loaded] Instead of consuming ammo normally, this weapon can be loaded through the toggle menu. Once loaded, it will charge faster with each shot, becoming unable to fire after its 6th shot.</desc>
+	<tooltip>1 shot 2 damage weapon, 20% chance to cause a breach, 20% chance to stun</tooltip>
+	<radius>45</radius>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>20</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>3.8</amount>
+		<count>6</count>
+	</boost>
+	<power>0</power>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<cost>40</cost>
+	<projectiles>
+		<projectile count="1" fake="false">GB_shot_medium</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>GB_cannonMedium1</sound>
+		<sound>GB_cannonMedium2</sound>
+		<sound>GB_cannonMedium3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>autocannon_revolver</weaponArt>
+    <iconReplace>autocannon_revolver_icon</iconReplace>
 	<iconImage>laser</iconImage>
 </weaponBlueprint>
