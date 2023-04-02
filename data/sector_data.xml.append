@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type="sectorDescription" name="SECRET_ANCIENT" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_SHOTGUN_SHRAPNEL" rarity="0"/>
+        <mod-append:blueprint name="AC_FLINTLOCK" rarity="0"/>
+        <mod-append:blueprint name="AC_REVOLVER" rarity="0"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECRET_ROYAL" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_SHOTGUN_SHRAPNEL" rarity="0"/>
+        <mod-append:blueprint name="AC_FLINTLOCK" rarity="0"/>
+        <mod-append:blueprint name="AC_REVOLVER" rarity="0"/>
+    </mod:findLike>
+</mod:findName>
+
+<mod:findName type="sectorDescription" name="SECTOR_FREEMANTIS" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_SHOTGUN_SHRAPNEL" rarity="3"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECTOR_MANTIS" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_SHOTGUN_SHRAPNEL" rarity="3"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECTOR_FREEMANTIS_UNIQUE" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_SHOTGUN_SHRAPNEL" rarity="2"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECTOR_FREEMANTIS" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="SECTOR_MANTIS_UNIQUE" rarity="3"/>
+    </mod:findLike>
+</mod:findName>

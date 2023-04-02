@@ -106,7 +106,7 @@
 	<bp>4</bp>
 	<rarity>0</rarity>
 	<projectiles>
-		<projectile count="1" fake="false" blueprint="STATION_LOOT_HEKTAR_PROJ_LIST">laser_burst</projectile>
+		<projectile count="1" fake="false" blueprint="MODULAR_LASER_OMNI_PROJ_LIST">laser_burst</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>lightLaser1</sound>

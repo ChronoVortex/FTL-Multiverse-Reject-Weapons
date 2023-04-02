@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<blueprintList name="STATION_LOOT_HEKTAR_PROJ_LIST">
+<blueprintList name="MODULAR_LASER_OMNI_PROJ_LIST">
 	<name>MODULAR_LASER_BASE_BIO</name>
 	<name>MODULAR_LASER_BASE_COOLDOWN</name>
 	<name>MODULAR_LASER_BASE_LOCKDOWN</name>
@@ -19,4 +19,26 @@
 	<name>LASER_LIGHT</name>
 	<name>LASER_LIGHT</name>
 	<name>LASER_LIGHT</name>
+	<name>LASER_LIGHT</name>
+	<name>LASER_LIGHT</name>
 </blueprintList>
+
+<mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
+	<mod-append:name>BOMB_SHOTGUN_SHRAPNEL</mod-append:name>
+	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
+	<mod-append:name>AC_FLINTLOCK</mod-append:name>
+	<mod-append:name>AC_REVOLVER</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_WEAPONS_FIRE_ALL">
+	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="BLUELIST_FIRE_ALL">
+	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="BLUELIST_FIRE_NONBALLISTIC">
+	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="BLUELIST_ANTIBIO">
+	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
+</mod:findName>
