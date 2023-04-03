@@ -35,3 +35,19 @@
         <mod-append:blueprint name="SECTOR_MANTIS_UNIQUE" rarity="3"/>
     </mod:findLike>
 </mod:findName>
+
+<mod:findName type="sectorDescription" name="SECTOR_SHELL" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_LEMONS" rarity="4"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECTOR_SHELL_UNIQUE" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_LEMONS" rarity="4"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECTOR_MORPH" panic="true">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="BOMB_LEMONS" rarity="4"/>
+    </mod:findLike>
+</mod:findName>

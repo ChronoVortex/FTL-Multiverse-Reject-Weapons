@@ -73,3 +73,20 @@
 	<desc length="1" x="0" y="0" />
 	<time>1</time>
 </anim>
+
+<animSheet name="bomblauncher_lemon" w="988" h="82" fw="52" fh="82">weapons/bomblauncher_lemon.png</animSheet>
+<weaponAnim name="bomblauncher_lemon">
+	<sheet>bomblauncher_lemon</sheet>
+	<desc length="19" x="0" y="0"/>
+	<chargedFrame>10</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint x="0" y="0" />
+	<mountPoint x="7" y="56" />
+	<delayChargeAnim>0.93</delayChargeAnim>
+</weaponAnim>
+<animSheet name="bomb_lemon" w="525" h="35" fw="35" fh="35">weapons/bomb_lemon.png</animSheet>
+<anim name="bomb_lemon">
+    <sheet>bomb_lemon</sheet>
+    <desc length="15" x="0" y="0"/>
+    <time>1.0</time>
+</anim>
