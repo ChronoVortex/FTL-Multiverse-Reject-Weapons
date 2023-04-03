@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Mechanical lists -->
 <blueprintList name="MODULAR_LASER_OMNI_PROJ_LIST">
 	<name>MODULAR_LASER_BASE_BIO</name>
 	<name>MODULAR_LASER_BASE_COOLDOWN</name>
@@ -23,6 +24,7 @@
 	<name>LASER_LIGHT</name>
 </blueprintList>
 
+<!-- Crapbucket -->
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
 	<mod-append:name>BOMB_SHOTGUN_SHRAPNEL</mod-append:name>
 	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
@@ -30,6 +32,7 @@
 	<mod-append:name>AC_REVOLVER</mod-append:name>
 </mod:findName>
 
+<!-- Bluelists -->
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_FIRE_ALL">
 	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
 </mod:findName>
@@ -41,4 +44,12 @@
 </mod:findName>
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO">
 	<mod-append:name>MODULAR_LASER_OMNI</mod-append:name>
+</mod:findName>
+
+<!-- Enemy weapon lists -->
+<mod:findName type="blueprintList" name="LIST_WEAPONS_MANTIS">
+	<mod-append:name>BOMB_SHOTGUN_SHRAPNEL</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_WEAPONS_FREEMANTIS">
+	<mod-append:name>BOMB_SHOTGUN_SHRAPNEL</mod-append:name>
 </mod:findName>
