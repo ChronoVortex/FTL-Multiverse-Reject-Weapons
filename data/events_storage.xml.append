@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<mod:findName type="event" name="STORAGE_CHECK_STATUS_MV">
+    <mod-append:choice hidden="true" req="ach_mv_testrel" lvl="1" blue="false">
+        <text>TESTING Cruiser</text>
+        <event>
+            <text>CLASS: TESTING Cruiser
+FACTION: Unknown
+
+This antique Kestrel was a testbed for new technologies, and has more dents, burns and other scars on its hull than most other ships in the Multiverse. As combat simulators became more reliable, the need for a physical ship to strap weapons to vanished, and this cruiser faded into obscurity.
+            </text>
+            <choice>
+                <text>Continue...</text>
+                <event load="STORAGE_CHECK_STATUS"/>
+            </choice>
+        </event>
+    </mod-append:choice>
+</mod:findName>
+
 <mod:findName type="event" name="COMBAT_CHECK_TOGGLE">
 	<mod-append:choice req="AC_REVOLVER" blue="false">
 		<text>(Revolving Autocannon) Load the revolver.</text>

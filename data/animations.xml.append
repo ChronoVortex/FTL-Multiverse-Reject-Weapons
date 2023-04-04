@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<animSheet name="mu_kestrel" w="264" h="22" fw="66" fh="22">effects/mu_kestrel.png</animSheet>
+<anim name="mu_kestrel">
+	<sheet>mu_kestrel</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+
 <animSheet name="bomblauncher_cluster_shrapnel" w="704" h="51" fw="44" fh="51">weapons/bomblauncher_cluster_shrapnel.png</animSheet>
 <weaponAnim name="bomblauncher_cluster_shrapnel">
     <sheet>bomblauncher_cluster_shrapnel</sheet>
@@ -72,6 +79,29 @@
 	<sheet>autocannon_revolver_icon</sheet>
 	<desc length="1" x="0" y="0" />
 	<time>1</time>
+</anim>
+
+<animSheet name="combustible_lemon_launcher" w="476" h="73" fw="68" fh="73">weapons/combustible_lemon_launcher.png</animSheet>
+<weaponAnim name="combustible_lemon_launcher">
+    <sheet>combustible_lemon_launcher</sheet>
+    <desc length="7" x="0" y="0"/>
+    <chargedFrame>1</chargedFrame>
+    <fireFrame>5</fireFrame>
+    <firePoint  x="45" y="21"/>
+    <mountPoint x="18" y="53"/>
+    <chargeImage>weapons/combustible_lemon_launcher_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="combustible_lemon_launcher_icon" w="64" h="60" fw="64" fh="60">weapons/combustible_lemon_launcher_icon.png</animSheet>
+<anim name="combustible_lemon_launcher_icon">
+	<sheet>combustible_lemon_launcher_icon</sheet>
+	<desc length="1" x="0" y="0" />
+	<time>1</time>
+</anim>
+<animSheet name="combustible_lemon_projectile" w="88" h="7" fw="22" fh="7">projectiles/combustible_lemon_projectile.png</animSheet>
+<anim name="combustible_lemon_projectile">
+	<sheet>combustible_lemon_projectile</sheet>
+	<desc length="4" x="0" y="0" />
+	<time>0.5</time>
 </anim>
 
 <animSheet name="bomblauncher_lemon" w="988" h="82" fw="52" fh="82">weapons/bomblauncher_lemon.png</animSheet>

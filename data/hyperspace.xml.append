@@ -1,3 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findLike type="ships">
+    <mod-append:customShip name="MT_BOSS_TESTREL_NORMAL">
+        <shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+            <shipIcon>icon_specialwep</shipIcon>
+        </shipIcons>
+        <noFuelStalemate/>
+    </mod-append:customShip>
+    <mod-append:customShip name="MT_BOSS_TESTREL_CHALLENGE">
+        <shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+            <shipIcon>icon_specialwep</shipIcon>
+        </shipIcons>
+        <noFuelStalemate/>
+    </mod-append:customShip>
+    <mod-append:customShip name="MT_BOSS_TESTREL_EXTREME">
+        <shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+            <shipIcon>icon_specialwep</shipIcon>
+        </shipIcons>
+        <noFuelStalemate/>
+    </mod-append:customShip>
+    <mod-append:customShip name="MT_BOSS_TESTREL_CHAOS">
+        <shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+            <shipIcon>icon_specialwep</shipIcon>
+        </shipIcons>
+        <noFuelStalemate/>
+    </mod-append:customShip>
+</mod:findLike>
+
+<mod:findLike type="events">
+    <mod-append:variable name="ach_mv_testrel" op="set" val="0"/>
+    <mod-append:bossShip yOffset="50">MT_BOSS_TESTREL_NORMAL</mod-append:bossShip>
+    <mod-append:bossShip yOffset="50">MT_BOSS_TESTREL_CHALLENGE</mod-append:bossShip>
+    <mod-append:bossShip yOffset="50">MT_BOSS_TESTREL_EXTREME</mod-append:bossShip>
+    <mod-append:bossShip yOffset="50">MT_BOSS_TESTREL_CHAOS</mod-append:bossShip>
+</mod:findLike>
+
+<mod:findLike type="achievements" limit="1">
+    <mod:findWithChildLike type="page" child-type="section" panic="true">
+        <mod:selector text="Renegade Cruisers" />
+        <mod:findLike type="section" panic="true">
+            <mod:selector text="Renegade Cruisers" />
+			<mod-append:achievement name="ACH_REN_TESTREL">
+				<name>Don't Test Me</name>
+				<description>Defeat the Testrel Renegade and get the Lemon Launcher.</description>
+				<icon>renegade_testrel</icon>
+				<header>Renegade Defeated</header>
+			</mod-append:achievement>
+        </mod:findLike>
+    </mod:findWithChildLike>
+</mod:findLike>
+
 <mod:findLike type="scripts">
     <mod-append:script>reject-weapons.lua</mod-append:script>
 </mod:findLike>

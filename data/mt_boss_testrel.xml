@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<img x="-77" y="-40" w="364" h="597" />
+<offsets>
+	<floor x="209" y="326" />
+	<cloak x="209" y="326" />
+</offsets>
+<weaponMounts>
+	<mount x="268" y="243" rotate="false" mirror="false" gib="5" slide="right" />
+	<mount x="96" y="243" rotate="false" mirror="true" gib="5" slide="left" />
+	<mount x="245" y="178" rotate="false" mirror="false" gib="6" slide="right" />
+	<mount x="119" y="178" rotate="false" mirror="true" gib="5" slide="left" />
+</weaponMounts>
+<thrusters sync="true">
+    <thruster x="15" y="542">mu_kestrel</thruster>
+    <thruster x="281" y="542">mu_kestrel</thruster>
+</thrusters>
+<explosion>
+	<gib1>
+		<velocity min="0.60" max="1.00" />
+		<direction min="150" max="210" />
+		<angular min="-0.40" max="-0.10" />
+		<x>111</x>
+		<y>440</y>
+	</gib1>
+	<gib2>
+		<velocity min="0.00" max="0.40" />
+		<direction min="90" max="180" />
+		<angular min="-0.40" max="0.00" />
+		<x>28</x>
+		<y>256</y>
+	</gib2>
+	<gib3>
+		<velocity min="0.50" max="1.00" />
+		<direction min="50" max="180" />
+		<angular min="-0.50" max="1.00" />
+		<x>0</x>
+		<y>344</y>
+	</gib3>
+	<gib4>
+		<velocity min="0.40" max="1.00" />
+		<direction min="210" max="290" />
+		<angular min="-0.20" max="1.00" />
+		<x>209</x>
+		<y>278</y>
+	</gib4>
+	<gib5>
+		<velocity min="0.00" max="0.50" />
+		<direction min="320" max="400" />
+		<angular min="-0.20" max="0.20" />
+		<x>55</x>
+		<y>131</y>
+	</gib5>
+	<gib6>
+		<velocity min="0.60" max="1.00" />
+		<direction min="330" max="390" />
+		<angular min="-1.00" max="1.00" />
+		<x>120</x>
+		<y>0</y>
+	</gib6>
+</explosion>
