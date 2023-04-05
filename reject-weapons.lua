@@ -1,3 +1,7 @@
+if not Hyperspace.version or Hyperspace.version.major < 1 or Hyperspace.version.minor < 3 then
+    error("Incorrect Hyperspace version detected! Reject Weapons requires Hyperspace 1.3+")
+end
+
 local infernoInstalled = mods and mods.inferno
 local vertexInstalled = mods and mods.vertexutil
 
