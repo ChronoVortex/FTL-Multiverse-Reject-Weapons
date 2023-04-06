@@ -25,7 +25,7 @@
     <mod-append:customShip name="MT_BOSS_TESTREL_CHAOS">
         <shipIcons>
             <shipIcon>icon_threat</shipIcon>
-            <shipIcon>icon_specialwep</shipIcon>
+            <shipIcon>icon_specialwep_chaos</shipIcon>
         </shipIcons>
         <noFuelStalemate/>
     </mod-append:customShip>
