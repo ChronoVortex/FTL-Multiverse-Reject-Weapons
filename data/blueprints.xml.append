@@ -85,50 +85,6 @@
 	<iconImage>bomb</iconImage>
 </weaponBlueprint>
 
-<weaponBlueprint name="MODULAR_LASER_OMNI">
-	<type>BURST</type>
-	<drone_targetable>0</drone_targetable>
-	<flavorType>Laser</flavorType>
-	<title>Hektar OmniLaser(TM)</title>
-	<short>OmniLaser</short>
-	<tip>tip_laser</tip>
-	<desc>While strapping every Hektar(TM) module to a single weapon may sound like a good idea, it does come with its downsides. Every shot this weapon fires has a random set of effects, and occasionally the weapon will short out and fire a shot that has no effects.</desc>
-	<tooltip>All modules attached.</tooltip>
-	<damage>1</damage>
-	<shots>5</shots>
-	<accuracyMod>20</accuracyMod>
-	<sp>0</sp>
-	<fireChance>0</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>13.5</cooldown>
-	<power>3</power>
-	<cost>100</cost>
-	<bp>4</bp>
-	<rarity>0</rarity>
-	<projectiles>
-		<projectile count="1" fake="false" blueprint="MODULAR_LASER_OMNI_PROJ_LIST">laser_burst</projectile>
-	</projectiles>
-	<launchSounds>
-		<sound>lightLaser1</sound>
-		<sound>lightLaser2</sound>
-		<sound>lightLaser3</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull2</sound>
-		<sound>hitHull3</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>modular_laser_all_modules</weaponArt>
-	<iconImage>laser</iconImage>
-</weaponBlueprint>
-
 <weaponBlueprint name="AC_FLINTLOCK">
 	<type>LASER</type>
 	<flavorType>Autocannon</flavorType>

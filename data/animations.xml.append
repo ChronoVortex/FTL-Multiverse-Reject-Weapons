@@ -24,17 +24,6 @@
     <time>1.0</time>
 </anim>
 
-<animSheet name="modular_laser_all_modules" w="364" h="73" fw="26" fh="73">weapons/modular_laser_all_modules.png</animSheet>
-<weaponAnim name="modular_laser_all_modules">
-    <sheet>modular_laser_all_modules</sheet>
-    <desc length="14" x="0" y="0"/>
-    <chargedFrame>9</chargedFrame>
-    <fireFrame>11</fireFrame>
-    <firePoint  x="14" y="21"/>
-    <mountPoint x="5" y="49"/>
-    <chargeImage>weapons/modular_laser_all_modules_glow.png</chargeImage>
-</weaponAnim>
-
 <animSheet name="autocannon_flintlock" w="230" h="85" fw="23" fh="85">weapons/autocannon_flintlock.png</animSheet>
 <weaponAnim name="autocannon_flintlock">
     <sheet>autocannon_flintlock</sheet>
