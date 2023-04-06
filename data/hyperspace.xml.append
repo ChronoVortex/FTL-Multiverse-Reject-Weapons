@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mod:findLike type="ships">
+<mod:findLike type="ships" limit="1">
     <mod-append:customShip name="MT_BOSS_TESTREL_NORMAL">
         <shipIcons>
             <shipIcon>icon_threat</shipIcon>
@@ -31,7 +31,7 @@
     </mod-append:customShip>
 </mod:findLike>
 
-<mod:findLike type="events">
+<mod:findLike type="events" limit="1">
     <mod-append:variable name="ach_mv_testrel" op="set" val="0"/>
     <mod-append:bossShip yOffset="50">MT_BOSS_TESTREL_NORMAL</mod-append:bossShip>
     <mod-append:bossShip yOffset="50">MT_BOSS_TESTREL_CHALLENGE</mod-append:bossShip>
@@ -54,6 +54,6 @@
     </mod:findWithChildLike>
 </mod:findLike>
 
-<mod:findLike type="scripts">
+<mod:findLike type="scripts" limit="1">
     <mod-append:script>reject-weapons.lua</mod-append:script>
 </mod:findLike>
